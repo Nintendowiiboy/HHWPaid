@@ -1,0 +1,33 @@
+body{
+ background-color:black;
+ color:limegreen;
+}
+
+button{
+ background-color:black;
+ color:limegreen;
+ font-weight:bold;
+ font-size:20pt;
+}
+
+#about, #help, #zipdiv, #maps{
+ display:none;
+}
+
+h3, h2, h1{
+ color: limegreen;
+}
+
+#footer{
+ color: limegreen;
+ font-size:8px;
+}
+
+#text, #text2{
+ color: green;
+}
+
+#choose{
+ color:red;
+ font-size:12px;
+}

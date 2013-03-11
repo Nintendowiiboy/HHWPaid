@@ -1,0 +1,110 @@
+<html>
+ <head>
+  <title>Household Waste App</title>
+  <script type="text/javascript" src="js1.js"></script>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+  <meta name = "viewport" content = "initial-scale = 1.0, user-scalable=no">
+ </head>
+ <body>
+  <div id="main">
+   <h1>Handling Household Waste</h1>
+   <select id="choice" onchange="selectedChanged()" backcolor="black" color="white">
+    <option>Choose...</option>
+    <option>Abrasive Household Cleaners</option>
+    <option>Aerosol Cans</option>
+    <option>Air Fresheners</option>
+    <option>Aluminum Cans</option>
+    <option>Automotive Brake Fluid</option>
+    <option>Automotive Transmission Fluid</option>
+    <option>Bleach Cleaners</option>
+    <option>Car Wax</option>
+    <option>Cardboard</option>
+    <option>Cleaners Using Ammonia</option>
+    <option>Disinfectants</option>
+    <option>Drain Cleaners</option>
+    <option>Electronics</option>
+    <option>Empty Paint Cans</option>
+    <option>Gasoline/Diesel</option>
+    <option>Glues/Adhesives</option>
+    <option>Grease/Rust Solvents</option>
+    <option>Ink and toner cartridges</option>
+    <option>Metal Cleaners & Polishes</option>
+    <option>Mothballs</option>
+    <option>Newspaper</option>
+    <option>Oil Based Paint</option>
+    <option>Old Tires</option>
+    <option>Other Paper</option>
+    <option>Oven Cleaners</option>
+    <option>Pesticides/Herbicides/Fertilizers</option>
+    <option>Pharmeceuticals</option>
+    <option>Photographic Chemicals</option>
+    <option>Plastic Bags</option>
+    <option>Plastic or Glass Bottles</option>
+    <option>Polishes</option>
+    <option>Pool Chemicals</option>
+    <option>Rug Cleaners</option>
+    <option>Spent Lightbulbs</option>
+    <option>Stains/Finishers/Wood Preservatives</option>
+    <option>Thinners/Turpentine</option>
+    <option>Toilet Bowl Cleaner</option>
+    <option>Used Antifreeze</option>
+    <option>Used Batteries</option>
+    <option>Used Motor Oil</option>
+    <option>Windshield Wiper Fluid</option>
+   </select><br/>
+   <h3>Waste Handling Methods:</h3>
+   <div id="text">Please select a choice from above!</div>
+   <h3>Friendly Alternatives:</h3>
+   <div id="text2">Please select a choice from above!</div><br/>
+   <button onclick="goTo('zipdiv')">Local Resources</button><br/><br/>
+   <button onclick="goTo('help')">Help</button><br/><br/>
+   <button onclick="goTo('about')">About</button>
+  </div>
+  <div id="help">
+   Navigating the app is very simple. Simply follow the steps below.
+   <br/><br/>
+   <ol>
+    <li>Click the dropdown list on the main page.</li>
+    <li>Find the item you want to learn more about.</li>
+    <li>Click that item.</li>
+    <li>Read the text filled in by your choice.</li>
+    <li>One last thing,... enjoy the app!</li>
+   </ol><br/>
+   To look up certain areas to help in your adventures, follow the steps below.
+   <br/><br/>
+   <ol>
+    <li>Click "Find Locations"</li>
+    <li>Use the dropdown menu to select what you want to find.</li>
+    <li>Type in your zip code OR select "Find by GPS"</li>
+    <li>Enjoy using our resources (Google Maps)</li>
+   </ol>
+   <button onclick="goTo('main')">Back</button>
+  </div>
+  <div id="about">
+   <h1>Newton Games Inc.</h1>
+   Newton Games Inc. was created by James J. Newton and Robert E. Newton.
+   <br/><br/>
+   Handling Household Waste was an idea that Jim (James) had. He originally
+   got the idea from a slide-out pamphlet that he created many years before. The app 
+   was then created by Robert Newton and released on the Android market.
+   Made with PhoneGap, this is Robert's first app on the app store.
+   To learn more about the company and apps/games created by NGI, please
+   visit their website <br/><a href="http://www.newtongamesinc.com/">NewtonGamesInc.com</a><br/> 
+   I hope you enjoy this free app.
+   <br/><br/><button onclick="goTo('main')">Back</button>
+  </div>
+  <div id="zipdiv">
+   Select one below.<br/><br/>
+   *<select id="typeOfSearch">
+    <option>Choose One</option>
+    <option>Hospital</option>
+    <option>Junk Yard</option>
+    <option>Recycle Facility</option>
+   </select><br/><div id="choose"></div><br/><br/>Now search by:<br/><br/>
+   Zipcode: <input type="text" id="zip"/> <button onclick="aquire('ZIP')">Go!</button>
+   <br/><br/>OR <br/><br/><button onclick="aquire('GPS')">By GPS</button><br/><br/>
+   <button onclick="goTo('main')">Back</button>
+  </div>
+  <br/><br/><div id="footer">Copyright 2012 (C) Newton Games Inc.<br/>Created by Robert Newton</div>
+ </body>
+</html>
